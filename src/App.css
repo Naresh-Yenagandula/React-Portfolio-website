@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+    --backgroundColor: #1f1b24;
+    --blueColor: hsl(250,69%,61%);
+}
+body{
+    background-color: var(--backgroundColor);
+    color:white
+}
+.NavbarColor{
+    background-color: var(--backgroundColor);
+}
+.nav-link{
+    font-size: medium;
+    margin-right: 3rem !important;
+}
+.nav-link.active{
+    color: var(--blueColor) !important;
+    border-bottom: 3px solid var(--blueColor);
+}
+h1, h3{
+    font-family:'Poppins';
+}
+h3 span{
+    font-style: italic;
+    font-size: larger;
+    color: var(--blueColor);
+}
+/* .aka{
+    color: #c8c2cf;
+    font-size: large;
+} */
+.heading_1{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.shortIntro{
+    color: #c8c2cf;
+    font-size: large;
+}
+div.icons{
+    font-size: x-large;
+    padding-bottom: 1rem;
+}
+div.icons a{
+    color: var(--blueColor);
+}
+.contact{
+    background-color: var(--blueColor);
+    border: 0px;
+    padding: 10px 20px 10px 20px;
+}
+.contact:hover{
+    background-color: rgb(161, 76, 240);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.icons{
+    color: var(--blueColor);
+    margin-right: 2rem;
+    font-size: x-large;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+.anim, .anim svg {
+    position: relative;
+    width: 100%;
+    height: 100%;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .anim path {
+    stroke-width: 2;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
