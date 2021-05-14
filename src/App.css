@@ -6,9 +6,12 @@
 }
 body{
     background-color: var(--backgroundColor);
-    color:white
+    color:white;
+    /* overflow: hidden; */
 }
+
 .NavbarColor{
+    z-index: 1;
     background-color: var(--backgroundColor);
 }
 .nav-link{
@@ -17,7 +20,6 @@ body{
 }
 .nav-link.active{
     color: var(--blueColor) !important;
-    border-bottom: 3px solid var(--blueColor);
 }
 h1, h3{
     font-family:'Poppins';
@@ -27,10 +29,6 @@ h3 span{
     font-size: larger;
     color: var(--blueColor);
 }
-/* .aka{
-    color: #c8c2cf;
-    font-size: large;
-} */
 .heading_1{
     font-size: 3rem;
     font-weight: 600;
@@ -61,7 +59,6 @@ div.icons a{
     font-size: x-large;
 }
 
-
 .anim, .anim svg {
     position: relative;
     width: 100%;
@@ -70,3 +67,37 @@ div.icons a{
   .anim path {
     stroke-width: 2;
   }
+section{
+    margin-top: 4rem;
+}
+
+.card{
+    background-color: var(--backgroundColor);
+}
+
+
+/* Skills Css */
+.icon_skill{
+    font-size: xx-large;
+    color:var(--blueColor);
+}
+.heading_skill{
+    font-size: larger;
+    font-weight: 400;
+}
+.para_skill{
+    font-size: small;
+    color: #c8c2cf;
+}
+.progress{
+    height: 4px;
+}
+.progress-bar{
+    background-color: var(--blueColor);
+}
+.clearflex{
+    margin-bottom: 1.5rem;
+}
+.card{
+    border: 1px solid var(--blueColor);
+}
