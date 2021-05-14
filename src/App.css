@@ -22,7 +22,7 @@ body{
     color: var(--blueColor) !important;
 }
 h1, h3{
-    font-family:'Poppins';
+    font-family:sans-serif;
 }
 h3 span{
     font-style: italic;
