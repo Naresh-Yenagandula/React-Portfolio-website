@@ -21,10 +21,13 @@ body{
 .nav-link.active{
     color: var(--blueColor) !important;
 }
-h1, h3{
+h1, h2{
     font-family:sans-serif;
 }
-h3 span{
+h2{
+    font-size: x-large;
+}
+h2 span{
     font-style: italic;
     font-size: larger;
     color: var(--blueColor);
@@ -46,17 +49,22 @@ div.icons a{
 }
 .contact{
     background-color: var(--blueColor);
+    color: white;
     border: 0px;
     padding: 10px 20px 10px 20px;
 }
 .contact:hover{
-    background-color: rgb(161, 76, 240);
+    color: white;
+    background-color: rgb(83, 48, 253);
 }
 
 .icons{
     color: var(--blueColor);
     margin-right: 2rem;
     font-size: x-large;
+}
+.icons:hover{
+    color: rgb(75, 40, 252);
 }
 
 .anim, .anim svg {
