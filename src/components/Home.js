@@ -31,7 +31,7 @@ function Home() {
             <Row>
                 <Col md={1}></Col>
                 <Col md={5} className="my-auto">
-                    <h1 className="heading_1">Hi, I'am Naresh</h1>
+                    <h1 className="heading_1">Hi, I'am Nareshs</h1>
                     <h3 className="heading_2">aka <span>Codex</span></h3>
                     <p className="shortIntro mt-3">High level experience in web design and<br />development knowledge, producing<br /> quality work</p>
                     <Button className="contact mt-4">Contact Me</Button>
