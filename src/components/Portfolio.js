@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Work() {
+function Portfolio() {
     return (
         <div>
             
@@ -8,4 +8,4 @@ function Work() {
     )
 }
 
-export default Work
+export default Portfolio

@@ -14,7 +14,8 @@ function Navbars() {
                         <NavLink className="nav-link" to='/home'>Home</NavLink>
                         <NavLink className="nav-link" to='/about'>About</NavLink>
                         <NavLink className="nav-link" to="/skills">Skills</NavLink>
-                        <NavLink className="nav-link" to="/work">Work</NavLink>
+                        <NavLink className="nav-link" to="/services">Services</NavLink>
+                        <NavLink className="nav-link" to="/portfolio">Portfolio</NavLink>
                         <NavLink className="nav-link" to="/contact">Contact</NavLink>
                     </Nav>
                 </Navbar.Collapse>

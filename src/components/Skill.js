@@ -6,13 +6,15 @@ function Skill() {
     return (
         <section>
             <Container>
+                {/* Heading */}
                 <div className="text-center" style={{ marginBottom: "5rem" }}>
-                    <h1>Skills</h1>
+                    <h1>My Skills</h1>
                     <p>My technical level</p>
                 </div>
                 <Row>
                     <Col md={1}></Col>
                     <Col md={5}>
+                        {/* Front End Accordion */}
                         <Accordion defaultActiveKey="0">
                             <Card>
                                 <Accordion.Toggle as={Card.Header} eventKey="0">
@@ -59,6 +61,7 @@ function Skill() {
                         </Accordion>
                     </Col>
                     <Col md={5}>
+                        {/* BackEnd Accordion */}
                     <Accordion>
                             <Card>
                                 <Accordion.Toggle as={Card.Header} eventKey="1">

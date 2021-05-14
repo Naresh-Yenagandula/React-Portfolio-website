@@ -101,3 +101,18 @@ section{
 .card{
     border: 1px solid var(--blueColor);
 }
+
+/* Form Css */
+
+.form-control{
+    background-color: #392f47;
+    border: 0px;
+    font-size: medium;
+    color: white;
+}
+.form-control:focus{
+    background-color: #392f47;
+    border: 1px solid var(--blueColor);
+    font-size: medium;
+    color: white;
+}
