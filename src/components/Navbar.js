@@ -11,12 +11,12 @@ function Navbars() {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto"></Nav>
                     <Nav>
-                        <NavLink className="nav-link" to='/home'>Home</NavLink>
-                        <NavLink className="nav-link" to='/about'>About</NavLink>
-                        <NavLink className="nav-link" to="/skills">Skills</NavLink>
-                        <NavLink className="nav-link" to="/services">Services</NavLink>
-                        <NavLink className="nav-link" to="/portfolio">Portfolio</NavLink>
-                        <NavLink className="nav-link" to="/contact">Contact</NavLink>
+                        <NavLink activeClassName="active" className="nav-link" to='/home'>Home</NavLink>
+                        <NavLink activeClassName="active" className="nav-link" to='/about'>About</NavLink>
+                        <NavLink activeClassName="active" className="nav-link" to="/skills">Skills</NavLink>
+                        <NavLink activeClassName="active" className="nav-link" to="/services">Services</NavLink>
+                        <NavLink activeClassName="active" className="nav-link" to="/portfolio">Portfolio</NavLink>
+                        <NavLink activeClassName="active" className="nav-link" to="/contact">Contact</NavLink>
                     </Nav>
                 </Navbar.Collapse>
                 </Container>
