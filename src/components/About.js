@@ -5,8 +5,7 @@ import {motion} from 'framer-motion'
 
 function About() {
     return (
-        <motion.div exit={{opacity:0}}>
-        <section id="about">
+        <motion.div exit={{opacity:0}} id="section">
             <Container>
                 <div className="text-center" style={{ marginBottom: "5rem" }}>
                     <h1>About Me</h1>
@@ -41,7 +40,6 @@ function About() {
                     </Col>
                 </Row>
             </Container>
-        </section>
         </motion.div>
     )
 }

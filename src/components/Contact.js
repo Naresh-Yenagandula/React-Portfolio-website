@@ -5,8 +5,7 @@ import {motion} from 'framer-motion'
 
 function Contact() {
     return (
-        <motion.div exit={{opacity:0}}>
-        <section>
+        <motion.div exit={{opacity:0}} id="section">
             <Container>
                 <div className="text-center" style={{ marginBottom: "5rem" }}>
                     <h1>Contact Me</h1>
@@ -64,7 +63,6 @@ function Contact() {
                     </Col>
                 </Row>
             </Container>
-        </section>
         </motion.div>
     )
 }

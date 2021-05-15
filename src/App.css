@@ -75,7 +75,7 @@ div.icons a{
   .anim path {
     stroke-width: 2;
   }
-section{
+#section{
     margin-top: 4rem;
 }
 
@@ -122,5 +122,34 @@ section{
     background-color: #392f47;
     border: 1px solid var(--blueColor);
     font-size: medium;
+    color: white;
+}
+
+
+/* Service css */
+.icon_card{
+    font-size: xx-large;
+    color:var(--blueColor);
+}
+.heading_card{
+    font-size: larger;
+    font-weight: 400;
+}
+.view_service{
+    color: var(--blueColor);
+}
+.service_card{
+    background-color: #392f47;
+    border: 0px;
+    padding-left: 1.5rem;
+    padding-top: 4rem;
+}
+.modal-content,.modal-header{
+    border: 0px;
+    border-radius: 1rem;
+    background-color: #392f47;
+    color: white;
+}
+.modal-header .close{
     color: white;
 }

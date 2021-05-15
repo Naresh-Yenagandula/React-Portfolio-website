@@ -1,12 +1,11 @@
 import React from 'react'
 import { Container, Row, Col, Accordion, Card, ProgressBar } from 'react-bootstrap'
-import { Braces,HddNetwork } from 'react-bootstrap-icons'
-import {motion} from 'framer-motion'
+import { Braces, HddNetwork } from 'react-bootstrap-icons'
+import { motion } from 'framer-motion'
 
 function Skill() {
     return (
-        <motion.div exit={{opacity:0}}>
-        <section>
+        <motion.div exit={{ opacity: 0 }} id="section">
             <Container>
                 {/* Heading */}
                 <div className="text-center" style={{ marginBottom: "5rem" }}>
@@ -64,7 +63,7 @@ function Skill() {
                     </Col>
                     <Col md={5}>
                         {/* BackEnd Accordion */}
-                    <Accordion>
+                        <Accordion>
                             <Card>
                                 <Accordion.Toggle as={Card.Header} eventKey="1">
                                     <Row>
@@ -111,7 +110,6 @@ function Skill() {
                     </Col>
                 </Row>
             </Container>
-        </section>
         </motion.div>
     )
 }
