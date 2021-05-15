@@ -1,9 +1,11 @@
 import React from 'react'
 import { Container, Row, Col, Form,Button } from 'react-bootstrap';
 import { Telephone, Envelope, GeoAlt } from 'react-bootstrap-icons'
+import {motion} from 'framer-motion'
 
 function Contact() {
     return (
+        <motion.div exit={{opacity:0}}>
         <section>
             <Container>
                 <div className="text-center" style={{ marginBottom: "5rem" }}>
@@ -63,6 +65,7 @@ function Contact() {
                 </Row>
             </Container>
         </section>
+        </motion.div>
     )
 }
 

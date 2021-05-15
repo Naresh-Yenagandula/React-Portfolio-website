@@ -1,9 +1,11 @@
 import React from 'react'
 import { Container, Row, Col, Accordion, Card, ProgressBar } from 'react-bootstrap'
 import { Braces,HddNetwork } from 'react-bootstrap-icons'
+import {motion} from 'framer-motion'
 
 function Skill() {
     return (
+        <motion.div exit={{opacity:0}}>
         <section>
             <Container>
                 {/* Heading */}
@@ -110,6 +112,7 @@ function Skill() {
                 </Row>
             </Container>
         </section>
+        </motion.div>
     )
 }
 

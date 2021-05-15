@@ -1,9 +1,11 @@
 import React from 'react'
-import profile from '../images/profile.jpg'
+import profile from '../images/profile.png'
 import { Container, Row, Col, Image } from 'react-bootstrap';
+import {motion} from 'framer-motion'
 
 function About() {
     return (
+        <motion.div exit={{opacity:0}}>
         <section id="about">
             <Container>
                 <div className="text-center" style={{ marginBottom: "5rem" }}>
@@ -40,6 +42,7 @@ function About() {
                 </Row>
             </Container>
         </section>
+        </motion.div>
     )
 }
 

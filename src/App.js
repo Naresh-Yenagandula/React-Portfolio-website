@@ -3,18 +3,20 @@ import './App.css'
 import Home from './components/Home'
 import Navbars from "./components/Navbar";
 import About from './components/About';
-import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import {Switch, Route,useLocation} from 'react-router-dom';
 import Skill from './components/Skill';
 import Services from './components/Services'
 import Contact from './components/Contact'
 import Portfolio from './components/Portfolio'
+import {AnimatePresence} from 'framer-motion';
 
 function App() {
+  const location=useLocation()
   return (
     <>
-      <BrowserRouter>
       <Navbars/>
-        <Switch>
+      <AnimatePresence exitBeforeEnter>
+        <Switch location={location} key={location.pathname}>
           <Route exact path="/" component={Home} />
           <Route exact path="/home" component={Home} />
           <Route exact path="/about" component={About} />
@@ -23,7 +25,7 @@ function App() {
           <Route exact path="/portfolio" component={Portfolio} />
           <Route exact path="/contact" component={Contact} />
         </Switch>
-      </BrowserRouter>
+        </AnimatePresence>
     </>
   );
 }
