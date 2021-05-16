@@ -1,12 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Container, Image, Row, Col, Button, CardDeck, Card } from 'react-bootstrap'
+import { Container, Image, Row, Col, Button, CardDeck, Card, Modal } from 'react-bootstrap'
 import profile from '../images/profile.png'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick'
 
 function Portfolio() {
+    const [show, setShow] = useState(false);
     var settings = {
         dots: true,
         infinite: true,
@@ -18,6 +19,13 @@ function Portfolio() {
     };
     return (
         <motion.div exit={{ opacity: 0 }} id="section">
+            <Modal show={show} onHide={() => setShow(false)} centered size="lg">
+                <Modal.Body>
+                <div className="embed-responsive embed-responsive-16by9">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KBjBPQExJLw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </Modal.Body>
+            </Modal>
             <Container>
                 <div className="text-center" style={{ marginBottom: "5rem" }}>
                     <h1>Portfolio</h1>
@@ -69,9 +77,7 @@ function Portfolio() {
                             <Card.Img variant="top" src={profile} />
                             <Card.Body>
                                 <Card.Title>Card title</Card.Title>
-                                <Card.Text>
-                                    This is a wider card with supporting
-                                </Card.Text>
+                                <Button size="sm" onClick={() => setShow(true)}>View</Button>
                             </Card.Body>
                         </Card>
                         <Card>
