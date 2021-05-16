@@ -7,7 +7,19 @@
 body{
     background-color: var(--backgroundColor);
     color:white;
-    /* overflow: hidden; */
+}
+
+body::-webkit-scrollbar{
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: var(--blueColor);
+    border-radius: 50px;
+}
+
+body::-webkit-scrollbar-track{
+    background-color: #392f47;
 }
 
 .NavbarColor{
@@ -152,4 +164,19 @@ div.icons a{
 }
 .modal-header .close{
     color: white;
+}
+
+/* Portfolio css */
+.slick-dots li.slick-active button:before{
+    color: white !important; 
+}
+.slick-dots li button:before{
+    opacity: 75  !important;
+    color: var(--blueColor) !important;
+}
+.portfolio_button{
+    background-color: var(--blueColor);
+    color: white;
+    border: 0px;
+    border-radius: 5px;
 }
