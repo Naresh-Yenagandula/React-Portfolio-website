@@ -1,5 +1,4 @@
-
-    export default[
+const array=[
         {
             id:1,
             title:'title',
@@ -57,3 +56,4 @@
             github:'Link',
         }
     ];
+export default array;
