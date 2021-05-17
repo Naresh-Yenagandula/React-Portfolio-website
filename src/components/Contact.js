@@ -14,7 +14,7 @@ function Contact() {
 
     const submitData=(e)=>{
         e.preventDefault()
-        axios.post('http://localhost:8081/api/contact',Data)
+        axios.post('https://codex-portfolio-server.herokuapp.com/api/contact',Data)
         .then((result)=>{
             console.log("sent");
         })
