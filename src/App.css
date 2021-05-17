@@ -1,14 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root{
     --backgroundColor: #1f1b24;
     --blueColor: hsl(250,69%,61%);
+    --text-color:white;
+    --backgroundColorLow:#392f47;
+    --paragraph-color:#c8c2cf;
 }
 body{
     background-color: var(--backgroundColor);
-    color:white;
+    color:var(--text-color);
 }
 
+/* Scrollbar css */
 body::-webkit-scrollbar{
     width: 8px;
 }
@@ -19,9 +22,16 @@ body::-webkit-scrollbar-thumb{
 }
 
 body::-webkit-scrollbar-track{
-    background-color: #392f47;
+    background-color: var(--backgroundColorLow);
 }
 
+/* input color css */
+
+input[type="color"]{
+    padding: 0px;
+}
+
+/* Navbar css */
 .NavbarColor{
     z-index: 1;
     background-color: var(--backgroundColor);
@@ -49,7 +59,7 @@ h2 span{
     font-weight: 600;
 }
 .shortIntro{
-    color: #c8c2cf;
+    color: var(--paragraph-color);
     font-size: large;
 }
 div.icons{
@@ -61,12 +71,12 @@ div.icons a{
 }
 .contact{
     background-color: var(--blueColor);
-    color: white;
+    color: var(--text-color);
     border: 0px;
     padding: 10px 20px 10px 20px;
 }
 .contact:hover{
-    color: white;
+    color: var(--text-color);
     background-color: rgb(83, 48, 253);
 }
 
@@ -107,7 +117,7 @@ div.icons a{
 }
 .para_skill{
     font-size: small;
-    color: #c8c2cf;
+    color: var(--paragraph-color);
 }
 .progress{
     height: 4px;
@@ -125,16 +135,16 @@ div.icons a{
 /* Form Css */
 
 .form-control{
-    background-color: #392f47;
+    background-color: var(--backgroundColorLow);
     border: 0px;
     font-size: medium;
-    color: white;
+    color: var(--text-color);
 }
 .form-control:focus{
-    background-color: #392f47;
+    background-color: var(--backgroundColorLow);
     border: 1px solid var(--blueColor);
     font-size: medium;
-    color: white;
+    color: var(--text-color);
 }
 
 
@@ -151,7 +161,7 @@ div.icons a{
     color: var(--blueColor);
 }
 .service_card{
-    background-color: #392f47;
+    background-color: var(--backgroundColorLow);
     border: 0px;
     padding-left: 1.5rem;
     padding-top: 4rem;
@@ -159,16 +169,16 @@ div.icons a{
 .modal-content,.modal-header{
     border: 0px;
     border-radius: 1rem;
-    background-color: #392f47;
-    color: white;
+    background-color: var(--backgroundColorLow);
+    color: var(--text-color);
 }
 .modal-header .close{
-    color: white;
+    color: var(--text-color);
 }
 
 /* Portfolio css */
 .slick-dots li.slick-active button:before{
-    color: white !important; 
+    color: var(--text-color) !important; 
 }
 .slick-dots li button:before{
     opacity: 75  !important;
@@ -176,7 +186,24 @@ div.icons a{
 }
 .portfolio_button{
     background-color: var(--blueColor);
-    color: white;
+    color: var(--text-color);
     border: 0px;
     border-radius: 5px;
+}
+.card_items{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 2rem;
+
+}
+.portfolioMenu{
+    background-color: var(--blueColor);
+    border: 0px;
+    margin-right: 1rem;
+}
+.modal_portfolio{
+    padding: 0px;
+}
+.card_portfolio{
+    padding: 0.5rem;
 }

@@ -10,11 +10,16 @@ function Navbars() {
             strokeDashoffset: [anime.setDashoffset, 0],
             easing: 'easeInOutSine',
             duration: 10000,
-            delay:1000,
+            delay: 1000,
             direction: 'alternate',
             loop: true
         });
     })
+
+    const themeChange = (e) => {
+        var root = document.documentElement;
+        root.style.setProperty('--blueColor', e.target.value);
+    }
     return (
         <>
             <Navbar className="NavbarColor" expand="lg" variant="dark" sticky="top">
@@ -36,11 +41,11 @@ function Navbars() {
                             <NavLink activeClassName="active" className="nav-link" to="/portfolio">Portfolio</NavLink>
                             <NavLink activeClassName="active" className="nav-link" to="/contact">Contact</NavLink>
                         </Nav>
+                        <input type="color" onChange={e=> themeChange(e)}  />
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
         </>
     )
 }
-
 export default memo(Navbars)

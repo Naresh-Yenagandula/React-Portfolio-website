@@ -1,13 +1,13 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { motion } from 'framer-motion'
-import { Container, Image, Row, Col, Button, CardDeck, Card, Modal } from 'react-bootstrap'
+import { Container, Image, Row, Col, Button } from 'react-bootstrap'
 import profile from '../images/profile.png'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick'
+import PortfolioMenu from './PortfolioMenu'
 
 function Portfolio() {
-    const [show, setShow] = useState(false);
     var settings = {
         dots: true,
         infinite: true,
@@ -19,13 +19,6 @@ function Portfolio() {
     };
     return (
         <motion.div exit={{ opacity: 0 }} id="section">
-            <Modal show={show} onHide={() => setShow(false)} centered size="lg">
-                <Modal.Body>
-                <div className="embed-responsive embed-responsive-16by9">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/KBjBPQExJLw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </div>
-                </Modal.Body>
-            </Modal>
             <Container>
                 <div className="text-center" style={{ marginBottom: "5rem" }}>
                     <h1>Portfolio</h1>
@@ -54,99 +47,7 @@ function Portfolio() {
                         </Slider>
                     </Col>
                 </Row>
-                <div id="section" className="d-flex justify-content-center">
-                    <Button variant="secondary" className="mr-2">
-                        All
-                    </Button>
-                    <Button variant="secondary" className="mr-2">
-                        Python
-                    </Button>
-                    <Button variant="secondary" className="mr-2">
-                        Javascript
-                    </Button>
-                    <Button variant="secondary" className="mr-2">
-                        React Js
-                    </Button>
-                    <Button variant="secondary">
-                        Angular Js
-                    </Button>
-                </div>
-                <div>
-                    <CardDeck className="mt-4">
-                        <Card>
-                            <Card.Img variant="top" src={profile} />
-                            <Card.Body>
-                                <Card.Title>Card title</Card.Title>
-                                <Button size="sm" onClick={() => setShow(true)}>View</Button>
-                            </Card.Body>
-                        </Card>
-                        <Card>
-                            <Card.Img variant="top" src={profile} />
-                            <Card.Body>
-                                <Card.Title>Card title</Card.Title>
-                                <Card.Text>
-                                    This card has supporting
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                        <Card>
-                            <Card.Img variant="top" src={profile} />
-                            <Card.Body>
-                                <Card.Title>Card title</Card.Title>
-                                <Card.Text>
-                                    This is a wider card with supporting
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                        <Card>
-                            <Card.Img variant="top" src={profile} />
-                            <Card.Body>
-                                <Card.Title>Card title</Card.Title>
-                                <Card.Text>
-                                    This is a wider card with supporting
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </CardDeck>
-                    <CardDeck className="mt-4">
-                        <Card>
-                            <Card.Img variant="top" src={profile} />
-                            <Card.Body>
-                                <Card.Title>Card title</Card.Title>
-                                <Card.Text>
-                                    This is a wider card with supporting
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                        <Card>
-                            <Card.Img variant="top" src={profile} />
-                            <Card.Body>
-                                <Card.Title>Card title</Card.Title>
-                                <Card.Text>
-                                    This card has supporting
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                        <Card>
-                            <Card.Img variant="top" src={profile} />
-                            <Card.Body>
-                                <Card.Title>Card title</Card.Title>
-                                <Card.Text>
-                                    This is a wider card with supporting
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                        <Card>
-                            <Card.Img variant="top" src={profile} />
-                            <Card.Body>
-                                <Card.Title>Card title</Card.Title>
-                                <Card.Text>
-                                    This is a wider card with supporting
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </CardDeck>
-                </div>
+                <PortfolioMenu  />
             </Container>
         </motion.div>
     )
