@@ -1,9 +1,28 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { Container, Row, Col, Form,Button } from 'react-bootstrap';
 import { Telephone, Envelope, GeoAlt } from 'react-bootstrap-icons'
 import {motion} from 'framer-motion'
+import axios from 'axios'
 
 function Contact() {
+    const [Data,setData] = useState({
+        name:'',
+        email:'',
+        project:'',
+        message:''
+    })
+
+    const submitData=(e)=>{
+        e.preventDefault()
+        axios.post('http://localhost:8081/api/contact',Data)
+        .then((result)=>{
+            console.log("sent");
+        })
+        .catch((error)=>{
+            console.log(error);
+        })
+        setData({name:'',email:'',project:'',message:''})
+    }
     return (
         <motion.div exit={{opacity:0}} id="section">
             <Container>
@@ -43,22 +62,46 @@ function Contact() {
                         </Row>
                     </Col>
                     <Col md={5}>
-                        <Form>
+                        <Form onSubmit={submitData}>
                             <Form.Row>
                                 <Form.Group as={Col}>
-                                    <Form.Control size="lg" type='text' placeholder="Name" />
+                                    <Form.Control 
+                                        size="lg" 
+                                        type='text' 
+                                        placeholder="Name" 
+                                        required 
+                                        value={Data.name}
+                                        onChange={e=>setData({...Data,name:e.target.value})} />
                                 </Form.Group>
                                 <Form.Group as={Col}>
-                                    <Form.Control size="lg" type='email' placeholder="Email" />
+                                    <Form.Control 
+                                        size="lg" 
+                                        type='email' 
+                                        placeholder="Email" 
+                                        required 
+                                        value={Data.email}
+                                        onChange={e=>setData({...Data,email:e.target.value})} />
                                 </Form.Group>
                             </Form.Row>
                             <Form.Group>
-                                <Form.Control size="lg" type="text" placeholder="Project" />
+                                <Form.Control 
+                                    size="lg" 
+                                    type="text" 
+                                    placeholder="Project" 
+                                    required 
+                                    value={Data.project}
+                                    onChange={e=>setData({...Data,project:e.target.value})} />
                             </Form.Group>
                             <Form.Group>
-                                <Form.Control size="lg" as="textarea" placeholder="Message" rows={8} />
+                                <Form.Control 
+                                    size="lg" 
+                                    as="textarea" 
+                                    placeholder="Message" 
+                                    rows={8} 
+                                    value={Data.message}
+                                    onChange={e=>setData({...Data,message:e.target.value})} />
                             </Form.Group>
-                            <Button className="contact">Send Message</Button>
+                            <Button className="contact" type="submit">Send Message</Button>
                         </Form>
                     </Col>
                 </Row>

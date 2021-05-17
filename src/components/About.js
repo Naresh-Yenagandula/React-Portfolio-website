@@ -16,10 +16,10 @@ function About() {
                     <Col md={5} className="my-auto">
                         <Image src={profile} width="350" alt="profile" fluid rounded />
                     </Col>
-                    <Col md={5}>
+                    <Col md={5} className="text-center">
                         <p className="shortIntro mt-3">Web developer, with extensive knowledge and<br/> years of experience, working in web technologies<br/> and UI/UX design, delivering quality work</p>
                         <div style={{marginTop:"3rem"}}>
-                            <Row>
+                            <Row className="text-center">
                                 <Col md={4}>
                                     <h3><b>08+</b></h3>
                                     <p>Years<br/>
