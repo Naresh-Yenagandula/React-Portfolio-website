@@ -107,6 +107,35 @@ function Skill() {
                                 </Accordion.Collapse>
                             </Card>
                         </Accordion>
+                        <Accordion className="mt-4">
+                            <Card>
+                                <Accordion.Toggle as={Card.Header} eventKey="2">
+                                    <Row>
+                                        <Col md={1}>
+                                            <span className="icon_skill"><HddNetwork /></span>
+                                        </Col>
+                                        <Col md={9}>
+                                            <span className="heading_skill">DataBase</span><br />
+                                            <span className="para_skill">More than 3 years</span>
+                                        </Col>
+                                    </Row>
+                                </Accordion.Toggle>
+                                <Accordion.Collapse eventKey="2">
+                                    <Card.Body>
+                                        <div className="clearflex">
+                                            <span className="float-left">MongoDB</span>
+                                            <span className="float-right">75 %</span><br />
+                                            <ProgressBar now={90} />
+                                        </div>
+                                        <div className="clearflex">
+                                            <span className="float-left">MySQL</span>
+                                            <span className="float-right">90 %</span><br />
+                                            <ProgressBar now={80} />
+                                        </div>
+                                    </Card.Body>
+                                </Accordion.Collapse>
+                            </Card>
+                        </Accordion>
                     </Col>
                 </Row>
             </Container>

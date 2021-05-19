@@ -9,6 +9,7 @@ import Services from './components/Services'
 import Contact from './components/Contact'
 import Portfolio from './components/Portfolio'
 import {AnimatePresence} from 'framer-motion';
+// import Footer from './components/Footer'
 
 function App() {
   const location=useLocation()
@@ -26,6 +27,7 @@ function App() {
           <Route exact path="/contact" component={Contact} />
         </Switch>
         </AnimatePresence>
+        {/* <Footer /> */}
     </>
   );
 }

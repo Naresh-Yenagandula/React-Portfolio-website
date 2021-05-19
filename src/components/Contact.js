@@ -38,8 +38,8 @@ function Contact() {
                                 <span className="icon_skill"><Telephone /></span>
                             </Col>
                             <Col md={9} className="pl-4">
-                                <span className="heading_skill">Call Me</span><br />
-                                <span className="para_skill">123-456-789</span>
+                                <span className="heading_skill">Whats App</span><br />
+                                <span className="para_skill">7028380283</span>
                             </Col>
                         </Row>
                         <Row className="mt-4">

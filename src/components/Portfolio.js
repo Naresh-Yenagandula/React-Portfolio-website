@@ -1,7 +1,8 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Container, Image, Row, Col, Button } from 'react-bootstrap'
-import profile from '../images/profile.png'
+import cmsangular from '../images/cmsangular.png'
+import cmsreact from '../images/cmsreact.png'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick'
@@ -29,19 +30,19 @@ function Portfolio() {
                     <Col md={8}>
                         <Slider {...settings}>
                             <div className="p-4">
-                                <Image className="float-left" rounded src={profile} width="300" alt="carosel1" />
+                                <Image className="float-left" rounded src={cmsreact} width="300" alt="carosel1" />
                                 <div className="float-right">
                                     <h3 className="heading_card"><b>CMS Website React</b></h3>
                                     <span className="mt-3">High level experience in web design and<br />development knowledge, producing<br /> quality work</span><br />
-                                    <Button className="mt-4 portfolio_button">Visit Project</Button>
+                                    <Button href="https://github.com/Naresh-Yenagandula/React-Cms-App" target="_blank" className="mt-4 portfolio_button">Visit Project</Button>
                                 </div>
                             </div>
                             <div className="p-4">
-                                <Image className="float-left" rounded src={profile} width="300" alt="carosel1" />
+                                <Image className="float-left" rounded src={cmsangular} width="300" alt="carosel1" />
                                 <div className="float-right">
                                     <h3 className="heading_card"><b>CMS Website Angular</b></h3>
                                     <span className="mt-3">High level experience in web design and<br />development knowledge, producing<br /> quality work</span><br />
-                                    <Button className="mt-4 portfolio_button">Visit Project</Button>
+                                    <Button href="https://github.com/Naresh-Yenagandula/CMS-App" target="_blank" className="mt-4 portfolio_button">Visit Project</Button>
                                 </div>
                             </div>
                         </Slider>
