@@ -213,4 +213,5 @@ div.icons a{
 }
 .custom_card{
     max-width: 300px;
+    min-width: 280px;
 }
