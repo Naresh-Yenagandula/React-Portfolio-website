@@ -1,10 +1,10 @@
-import React, { useState,useEffect } from 'react'
-import { Card, Button,Modal } from 'react-bootstrap'
+import React, { useState, useEffect } from 'react'
+import { Card, Button, Modal } from 'react-bootstrap'
 import items from './Data'
-import {Youtube,Github} from 'react-bootstrap-icons'
+import { Youtube, Github } from 'react-bootstrap-icons'
 
 function PortfolioMenu() {
-    const [show,setShow] = useState({modal:false,data:''})
+    const [show, setShow] = useState({ modal: false, data: '' })
     const [Data, setData] = useState(items)
 
     useEffect(() => {
@@ -21,7 +21,7 @@ function PortfolioMenu() {
     }
     return (
         <>
-            <Modal show={show.modal} onHide={() => setShow({...show,modal:false})} centered size="lg">
+            <Modal show={show.modal} onHide={() => setShow({ ...show, modal: false })} centered size="lg">
                 <Modal.Body className="modal_portfolio">
                     <div className="embed-responsive embed-responsive-16by9">
                         <iframe width="560" height="315" src={show.data} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
@@ -36,18 +36,18 @@ function PortfolioMenu() {
                 <Button className="portfolioMenu" size="sm" onClick={() => filterData('angular')}>Angular</Button>
             </div>
 
-            <div className="card_items mt-4 mb-4">
+            <div className="row justify-content-center mt-4 mb-4">
                 {
                     Data.map((item) => {
                         return (
-                            <Card key={item.id} className="mt-4 port_card">
+                            <Card key={item.id} className="mx-2 mb-3 custom_card">
                                 <Card.Img src={item.img} />
                                 <span className="port_icons text-center">
                                     {item.youtube ?
-                                    <Youtube className="youtube" onClick={()=>setShow({modal:true,data:item.youtube})} /> :null
+                                        <Youtube className="youtube" onClick={() => setShow({ modal: true, data: item.youtube })} /> : null
                                     }
-                                    {item.github ? 
-                                    <Github className="github" />:null
+                                    {item.github ?
+                                        <Github className="github" /> : null
                                     }
                                 </span>
                             </Card>
