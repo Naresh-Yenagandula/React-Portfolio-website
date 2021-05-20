@@ -44,7 +44,7 @@ function Home() {
                         </div>
                     </Col>
                 </Row>
-                <Row style={{ marginTop: "3rem" }}>
+                <Row style={{ marginTop: "3rem" }} className="mb-4">
                     <Col md={1}></Col>
                     <Col>
                         <a className="icons" href="https://www.linkedin.com/in/nareshyenagandula/" target="_blank" rel="noreferrer"><Linkedin /></a>

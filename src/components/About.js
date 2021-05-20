@@ -2,6 +2,7 @@ import React from 'react'
 import profile from '../images/profile.png'
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import {motion} from 'framer-motion'
+import Skeleton from '@material-ui/lab/Skeleton'
 
 function About() {
     return (
@@ -14,18 +15,20 @@ function About() {
                 <Row>
                     <Col md={1}></Col>
                     <Col md={5} className="my-auto">
-                        <Image src={profile} width="350" alt="profile" fluid rounded />
+                        {profile?
+                        <Image src={profile} width="350" alt="profile" fluid rounded />:
+                        <Skeleton variant="rect" width={350} height={220} />}
                     </Col>
-                    <Col md={5}>
+                    <Col md={5} sm={12}>
                         <p className="shortIntro mt-3">Web developer, with extensive knowledge and<br/> years of experience, working in web technologies<br/> and UI/UX design, delivering quality work</p>
                         <div style={{marginTop:"3rem"}}>
                             <Row className="text-center">
-                                <Col md={4}>
+                                <Col md={4} sm={6}>
                                     <h3><b>04+</b></h3>
                                     <p>Years<br/>
                                     Experience</p>
                                 </Col>
-                                <Col md={{span:4,offset:2}}>
+                                <Col md={{span:4,offset:2}} sm={{span:6,offset:0}}>
                                     <h3><b>10+</b></h3>
                                     <p>Projects<br/>
                                     Completed</p>

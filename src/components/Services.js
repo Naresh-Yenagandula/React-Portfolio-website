@@ -60,7 +60,7 @@ function Services() {
                 </div>
                 <Row className="justify-content-center">
                     <Col md={3}>
-                        <Card className="service_card">
+                        <Card className="service_card mb-4">
                             <Card.Body>
                                 <span className="icon_card"><Terminal /></span>
                                 <p className="heading_card mt-4">Python<br /> Projects</p>
@@ -69,7 +69,7 @@ function Services() {
                         </Card>
                     </Col>
                     <Col md={3}>
-                        <Card className="service_card">
+                        <Card className="service_card mb-4">
                             <Card.Body>
                                 <span className="icon_card"><CodeSlash /></span>
                                 <p className="heading_card mt-4">Frontend<br /> Development</p>
@@ -78,7 +78,7 @@ function Services() {
                         </Card>
                     </Col>
                     <Col md={3}>
-                        <Card className="service_card">
+                        <Card className="service_card mb-4">
                             <Card.Body>
                                 <span className="icon_card"><HddNetwork /></span>
                                 <p className="heading_card mt-4">Backend<br /> Development</p>

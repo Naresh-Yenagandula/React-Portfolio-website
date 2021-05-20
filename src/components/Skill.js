@@ -16,7 +16,7 @@ function Skill() {
                     <Col md={1}></Col>
                     <Col md={5}>
                         {/* Front End Accordion */}
-                        <Accordion defaultActiveKey="0">
+                        <Accordion defaultActiveKey="0" className="mb-4">
                             <Card>
                                 <Accordion.Toggle as={Card.Header} eventKey="0">
                                     <Row>

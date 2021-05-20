@@ -32,17 +32,17 @@ function Portfolio() {
                             <div className="p-4">
                                 <Image className="float-left" rounded src={cmsreact} width="300" alt="carosel1" />
                                 <div className="float-right">
-                                    <h3 className="heading_card"><b>CMS Website React</b></h3>
+                                    <h2 className="heading_card"><b>CMS Website React</b></h2>
                                     <span className="mt-3">High level experience in web design and<br />development knowledge, producing<br /> quality work</span><br />
-                                    <Button href="https://github.com/Naresh-Yenagandula/React-Cms-App" target="_blank" className="mt-4 portfolio_button">Visit Project</Button>
+                                    <Button href="https://github.com/Naresh-Yenagandula/React-Cms-App" rel="noreferrer" target="_blank" className="mt-4 portfolio_button">Visit Project</Button>
                                 </div>
                             </div>
                             <div className="p-4">
                                 <Image className="float-left" rounded src={cmsangular} width="300" alt="carosel1" />
                                 <div className="float-right">
-                                    <h3 className="heading_card"><b>CMS Website Angular</b></h3>
+                                    <h2 className="heading_card"><b>CMS Website Angular</b></h2>
                                     <span className="mt-3">High level experience in web design and<br />development knowledge, producing<br /> quality work</span><br />
-                                    <Button href="https://github.com/Naresh-Yenagandula/CMS-App" target="_blank" className="mt-4 portfolio_button">Visit Project</Button>
+                                    <Button href="https://github.com/Naresh-Yenagandula/CMS-App" rel="noreferrer" target="_blank" className="mt-4 portfolio_button">Visit Project</Button>
                                 </div>
                             </div>
                         </Slider>

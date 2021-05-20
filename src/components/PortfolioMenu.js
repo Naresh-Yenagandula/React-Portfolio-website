@@ -44,7 +44,7 @@ function PortfolioMenu() {
                             <Card key={item.id} className="mx-2 mb-3 custom_card">
                                 {item.img?
                                 <Card.Img src={item.img} width="298px" height="168px" />:
-                                <Skeleton variant="rect" width="298px" height="168p" /> }
+                                <Skeleton variant="rect" width={298} height={168} />}
                                 <span className="port_icons text-center">
                                     {item.youtube ?
                                         <Youtube className="youtube" onClick={() => setShow({ modal: true, data: item.youtube })} /> : null
