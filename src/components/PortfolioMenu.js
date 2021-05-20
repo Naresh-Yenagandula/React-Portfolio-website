@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Card, Button, Modal } from 'react-bootstrap'
 import items from './Data'
 import { Youtube, Github } from 'react-bootstrap-icons'
+import Skeleton from '@material-ui/lab/Skeleton'
 
 function PortfolioMenu() {
     const [show, setShow] = useState({ modal: false, data: '' })
@@ -41,7 +42,9 @@ function PortfolioMenu() {
                     Data.map((item) => {
                         return (
                             <Card key={item.id} className="mx-2 mb-3 custom_card">
-                                <Card.Img src={item.img} />
+                                {item.img?
+                                <Card.Img src={item.img} width="298px" height="168px" />:
+                                <Skeleton variant="rect" width="298px" height="168p" /> }
                                 <span className="port_icons text-center">
                                     {item.youtube ?
                                         <Youtube className="youtube" onClick={() => setShow({ modal: true, data: item.youtube })} /> : null
