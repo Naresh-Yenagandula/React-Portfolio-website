@@ -33,7 +33,7 @@ function Portfolio() {
                                 <Image className="float-left" rounded src={cmsreact} width="300" alt="carosel1" />
                                 <div className="float-right">
                                     <h2 className="heading_card"><b>CMS Website React</b></h2>
-                                    <span className="mt-3">High level experience in web design and<br />development knowledge, producing<br /> quality work</span><br />
+                                    <span className="mt-3">Management System with features like<br /> Role based authorization, token based<br /> authentication, Mail system, OTP System, etc</span><br />
                                     <Button href="https://github.com/Naresh-Yenagandula/React-Cms-App" rel="noreferrer" target="_blank" className="mt-4 portfolio_button">Visit Project</Button>
                                 </div>
                             </div>
@@ -41,7 +41,7 @@ function Portfolio() {
                                 <Image className="float-left" rounded src={cmsangular} width="300" alt="carosel1" />
                                 <div className="float-right">
                                     <h2 className="heading_card"><b>CMS Website Angular</b></h2>
-                                    <span className="mt-3">High level experience in web design and<br />development knowledge, producing<br /> quality work</span><br />
+                                    <span className="mt-3">Management System with features like<br /> Role based authorization, token based<br /> authentication with Angular & Express Js etc</span><br />
                                     <Button href="https://github.com/Naresh-Yenagandula/CMS-App" rel="noreferrer" target="_blank" className="mt-4 portfolio_button">Visit Project</Button>
                                 </div>
                             </div>

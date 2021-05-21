@@ -50,7 +50,7 @@ function PortfolioMenu() {
                                         <Youtube className="youtube" onClick={() => setShow({ modal: true, data: item.youtube })} /> : null
                                     }
                                     {item.github ?
-                                        <Github className="github" /> : null
+                                        <a href={item.github} target="_blank" rel="noreferrer" style={{color:"white"}}><Github className="github" /></a> : null
                                     }
                                 </span>
                             </Card>

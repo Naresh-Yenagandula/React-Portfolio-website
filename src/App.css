@@ -190,10 +190,17 @@ div.icons a{
     border: 0px;
     border-radius: 5px;
 }
+.portfolio_button:hover, .portfolio_button:focus{
+    background-color: rgb(83, 48, 253);
+}
+
 .portfolioMenu{
     background-color: var(--blueColor);
     border: 0px;
     margin-right: 1rem;
+}
+.portfolioMenu:hover, .portfolioMenu:focus{
+    background-color: rgb(83, 48, 253);
 }
 .modal_portfolio{
     padding: 0px;

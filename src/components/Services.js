@@ -15,11 +15,11 @@ function Services() {
                 <Modal.Header closeButton>
                     <Modal.Body>
                         <h3 className="heading_card mb-4">Python Projects</h3>
-                        <p><CheckCircle /> </p>
-                        <p><CheckCircle /> </p>
-                        <p><CheckCircle /> </p>
-                        <p><CheckCircle /> </p>
-                        <p><CheckCircle /> </p>
+                        <p><CheckCircle /> Data Scraping</p>
+                        <p><CheckCircle /> Data Science</p>
+                        <p><CheckCircle /> Command Line Projects</p>
+                        <p><CheckCircle /> Ethical Hacking with Python</p>
+                        {/* <p><CheckCircle /></p> */}
                     </Modal.Body>
                 </Modal.Header>
             </Modal>
@@ -29,11 +29,12 @@ function Services() {
                 <Modal.Header closeButton>
                     <Modal.Body>
                         <h3 className="heading_card mb-4">Frontend Development</h3>
-                        <p><CheckCircle /> </p>
-                        <p><CheckCircle /> </p>
-                        <p><CheckCircle /> </p>
-                        <p><CheckCircle /> </p>
-                        <p><CheckCircle /> </p>
+                        <p><CheckCircle /> Static Websites</p>
+                        <p><CheckCircle /> Dynamic Websites</p>
+                        <p><CheckCircle /> Wordpress Websites</p>
+                        <p><CheckCircle /> React Websites</p>
+                        <p><CheckCircle /> Angular Websites</p>
+                        <p><CheckCircle /> Bootstrap</p>
                     </Modal.Body>
                 </Modal.Header>
             </Modal>
@@ -43,11 +44,10 @@ function Services() {
                 <Modal.Header closeButton>
                     <Modal.Body>
                         <h3 className="heading_card mb-4">Backend Development</h3>
-                        <p><CheckCircle /> </p>
-                        <p><CheckCircle /> </p>
-                        <p><CheckCircle /> </p>
-                        <p><CheckCircle /> </p>
-                        <p><CheckCircle /> </p>
+                        <p><CheckCircle /> PHP, MySQL</p>
+                        <p><CheckCircle /> Node Js, Express Js, MongoDB</p>
+                        {/* p><CheckCircle /> </p>
+                        <p><CheckCircle /> </p>< */}
                     </Modal.Body>
                 </Modal.Header>
             </Modal>

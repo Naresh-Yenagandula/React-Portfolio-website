@@ -35,7 +35,7 @@ function Home() {
                     <Col md={5} className="my-auto">
                         <h1 className="heading_1">Hi, I'am Naresh</h1>
                         <h2 className="heading_2">aka <span>Codex</span></h2>
-                        <p className="shortIntro mt-3">High level experience in web design and<br />development knowledge, producing<br /> quality work</p>
+                        <p className="shortIntro mt-3">Experienced Web Developer and Python Developer, <br />producing quality work</p>
                         <NavLink className="btn contact mt-4" to="/contact">Contact Me</NavLink>
                     </Col>
                     <Col md={6} className="text-center mt-4">
