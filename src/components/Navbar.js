@@ -41,7 +41,8 @@ function Navbars() {
                             <NavLink activeClassName="active" className="nav-link" to="/portfolio">Portfolio</NavLink>
                             <NavLink activeClassName="active" className="nav-link" to="/contact">Contact</NavLink>
                         </Nav>
-                        <input type="color" onChange={e=> themeChange(e)}  />
+                        {/* <label for="color">Color </label> */}
+                        <input id="color" type="color" onChange={e=> themeChange(e)} />
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

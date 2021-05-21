@@ -30,7 +30,7 @@ function Portfolio() {
                     <Col md={8}>
                         <Slider {...settings}>
                             <div className="p-4">
-                                <Image className="float-left" rounded src={cmsreact} width="300" alt="carosel1" />
+                                <Image className="float-left" rounded src={cmsreact} width="300px" height="158px" alt="react cms app image" />
                                 <div className="float-right">
                                     <h2 className="heading_card"><b>CMS Website React</b></h2>
                                     <span className="mt-3">Management System with features like<br /> Role based authorization, token based<br /> authentication, Mail system, OTP System, etc</span><br />
@@ -38,7 +38,7 @@ function Portfolio() {
                                 </div>
                             </div>
                             <div className="p-4">
-                                <Image className="float-left" rounded src={cmsangular} width="300" alt="carosel1" />
+                                <Image className="float-left" rounded src={cmsangular} width="300px" height="158px" alt="amgular cms app image" />
                                 <div className="float-right">
                                     <h2 className="heading_card"><b>CMS Website Angular</b></h2>
                                     <span className="mt-3">Management System with features like<br /> Role based authorization, token based<br /> authentication with Angular & Express Js etc</span><br />

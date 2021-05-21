@@ -47,11 +47,11 @@ function Home() {
                 <Row style={{ marginTop: "3rem" }} className="mb-4">
                     <Col md={1}></Col>
                     <Col>
-                        <a className="icons" href="https://www.linkedin.com/in/nareshyenagandula/" target="_blank" rel="noreferrer"><Linkedin /></a>
-                        <a className="icons" href="https://www.facebook.com/NareshYenagandula7" target="_blank" rel="noreferrer"><Facebook /></a>
-                        <a className="icons" href="https://github.com/Naresh-Yenagandula" target="_blank" rel="noreferrer"><Github /></a>
-                        <a className="icons" href="https://www.youtube.com/CodexLearn" target="_blank" rel="noreferrer"><Youtube /></a>
-                        <a className="icons" href="https://www.instagram.com/__r_a_c_e_r__/" target="_blank" rel="noreferrer"><Instagram /></a>
+                        <a className="icons" href="https://www.linkedin.com/in/nareshyenagandula/" target="_blank" rel="noreferrer"><Linkedin /> </a>
+                        <a className="icons" href="https://www.facebook.com/NareshYenagandula7" target="_blank" rel="noreferrer"><Facebook /> </a>
+                        <a className="icons" href="https://github.com/Naresh-Yenagandula" target="_blank" rel="noreferrer"><Github /> </a>
+                        <a className="icons" href="https://www.youtube.com/CodexLearn" target="_blank" rel="noreferrer"><Youtube /> </a>
+                        <a className="icons" href="https://www.instagram.com/__r_a_c_e_r__/" target="_blank" rel="noreferrer"><Instagram /> </a>
                     </Col>
                 </Row>
             </Container>

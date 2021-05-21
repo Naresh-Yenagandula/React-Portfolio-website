@@ -43,7 +43,7 @@ function PortfolioMenu() {
                         return (
                             <Card key={item.id} className="mx-2 mb-3 custom_card">
                                 {item.img?
-                                <Card.Img src={item.img} width="298px" height="168px" />:
+                                <Card.Img src={item.img} width="298px" height="168px" alt="card images" />:
                                 <Skeleton variant="rect" width={298} height={168} />}
                                 <span className="port_icons text-center">
                                     {item.youtube ?

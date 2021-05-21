@@ -34,7 +34,7 @@ function Skill() {
                                         <div className="clearflex">
                                             <span className="float-left">HTML</span>
                                             <span className="float-right">100 %</span><br />
-                                            <ProgressBar now={100} />
+                                            <ProgressBar now={100}  />
                                         </div>
                                         <div className="clearflex">
                                             <span className="float-left">CSS</span>
